@@ -27,7 +27,7 @@ export default function AboutPage() {
       role: "Team Leader",
       description:
         "Full-stack developer leading the technical architecture and system design of DishaSetu.",
-      avatar: "TK",
+      avatar: "components\images\tarun pic.png",
     },
     {
       name: "Astha Verma",
@@ -74,25 +74,25 @@ export default function AboutPage() {
 
   const milestones = [
     {
-      year: "2024",
-      title: "Smart India Hackathon",
+      year: "April 2026",
+      title: "SahAl for Shiksha HACKATHON 2026",
       description:
-        "DishaSetu conceptualized and developed by Team LearnUp for SIH.",
+        "DishaSetu conceptualized and developed by Team Vinayak.",
     },
     {
-      year: "2024",
+      year: "May 2026",
       title: "Offline-First Architecture",
       description:
-        "Implemented Bluetooth mesh sync for areas with no internet connectivity.",
+        "Implement Bluetooth mesh sync for areas with no internet connectivity.",
     },
     {
-      year: "2024",
+      year: "June 2026",
       title: "Multi-Language Support",
       description:
-        "Added support for Hindi, Tamil, Bengali, Marathi, Gujarati, and Telugu.",
+        "Add support for Hindi, Tamil, Bengali, Marathi, Gujarati, and Telugu.",
     },
     {
-      year: "2025",
+      year: "Dec 2026",
       title: "Pan-India Expansion",
       description:
         "Goal to reach students across all 28 states and 8 union territories.",
@@ -122,7 +122,7 @@ export default function AboutPage() {
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm">
             <Award className="h-4 w-4 text-primary" />
             <span className="text-muted-foreground">
-              Smart India Hackathon Project
+              SahAl for Shiksha HACKATHON 2026
             </span>
           </div>
 
