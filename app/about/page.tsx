@@ -268,25 +268,27 @@ export default function AboutPage() {
                   {member.description}
                 </p>
                 <div className="mt-4 flex items-center justify-center gap-3">
-                  <button
-                    className="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
-                    aria-label={`${member.name} LinkedIn`}
-                  >
-                    <Linkedin className="h-4 w-4" />
-                  </button>
-                  <button
-                    className="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
-                    aria-label={`${member.name} GitHub`}
-                  >
-                    <Github className="h-4 w-4" />
-                  </button>
-                  <button
-                    className="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
-                    aria-label={`${member.name} Twitter`}
-                  >
-                    <Twitter className="h-4 w-4" />
-                  </button>
-                </div>
+  <button
+    className="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+    aria-label={`${member.name} LinkedIn`}
+  >
+    <LinkedinIcon className="h-4 w-4" />
+  </button>
+
+  <button
+    className="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+    aria-label={`${member.name} GitHub`}
+  >
+    <GithubIcon className="h-4 w-4" />
+  </button>
+
+  <button
+    className="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+    aria-label={`${member.name} Twitter`}
+  >
+    <TwitterIcon className="h-4 w-4" />
+  </button>
+</div>
               </div>
             ))}
           </div>
