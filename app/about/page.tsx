@@ -1,7 +1,7 @@
-use client";
+"use client";
 
 import { Header } from "@/components/header";
-impor"ut { Footer } from "@/components/footer";
+import { Footer } from "@/components/footer";
 import { useTranslation } from "@/hooks/use-translation";
 import {
   Target,
