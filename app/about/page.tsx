@@ -27,7 +27,7 @@ export default function AboutPage() {
       role: "Team Leader",
       description:
         "Full-stack developer leading the technical architecture and system design of DishaSetu.",
-      avatar: "components\images\tarun pic.png",
+      <img src=""components\images\tarun pic.png"" alt="tarun pic" />
     },
     {
       name: "Astha Verma",
