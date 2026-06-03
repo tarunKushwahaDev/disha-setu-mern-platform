@@ -314,7 +314,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Our Journey
+              Our Roadmap
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground">
               From concept to reality - the story of DishaSetu
