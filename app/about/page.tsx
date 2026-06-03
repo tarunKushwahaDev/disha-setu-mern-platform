@@ -15,13 +15,11 @@ import {
   Mail,
   MapPin,
   Phone,
-  Github,
-  Linkedin,
-  Twitter,
 } from "lucide-react";
 
 export default function AboutPage() {
   const { t } = useTranslation();
+
 
   const teamMembers = [
     {
@@ -74,33 +72,7 @@ export default function AboutPage() {
     },
   ];
 
-  const milestones = [
-    {
-      year: "2024",
-      title: "Smart India Hackathon",
-      description:
-        "DishaSetu conceptualized and developed by Team LearnUp for SIH.",
-    },
-    {
-      year: "2024",
-      title: "Offline-First Architecture",
-      description:
-        "Implemented Bluetooth mesh sync for areas with no internet connectivity.",
-    },
-    {
-      year: "2024",
-      title: "Multi-Language Support",
-      description:
-        "Added support for Hindi, Tamil, Bengali, Marathi, Gujarati, and Telugu.",
-    },
-    {
-      year: "2025",
-      title: "Pan-India Expansion",
-      description:
-        "Goal to reach students across all 28 states and 8 union territories.",
-    },
-  ];
-
+  
   const partners = [
     "Ministry of Education",
     "PMKVY",
@@ -240,7 +212,7 @@ export default function AboutPage() {
           <div className="text-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
               <Users className="h-4 w-4" />
-              Team LearnUp
+              Team Vinayak
             </div>
             <h2 className="mt-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Meet the Team Behind DishaSetu
@@ -267,7 +239,11 @@ export default function AboutPage() {
                 <p className="mt-3 text-sm text-muted-foreground">
                   {member.description}
                 </p>
-                <div className="mt-4 flex items-center justify-center gap-3">
+                
+                {/* TEMPORARILY COMMENTED OUT SOCIAL ICONS TO FIX BUILD
+                  Uncomment this section and replace the lucide icons with react-icons (e.g. <FaLinkedin />) later.
+                */}
+                {/* <div className="mt-4 flex items-center justify-center gap-3">
                   <button
                     className="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-foreground"
                     aria-label={`${member.name} LinkedIn`}
@@ -287,12 +263,12 @@ export default function AboutPage() {
                     <Twitter className="h-4 w-4" />
                   </button>
                 </div>
+                */}
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* Timeline Section */}
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
