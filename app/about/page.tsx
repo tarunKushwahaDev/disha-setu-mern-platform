@@ -2,6 +2,8 @@
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import Image from "next/image";
+import tarunPic from "@/components/images/tarun pic.png";
 import { useTranslation } from "@/hooks/use-translation";
 import {
   Target,
@@ -22,28 +24,28 @@ export default function AboutPage() {
 
 
   const teamMembers = [
-    {
-      name: "Tarun Kushwaha",
-      role: "Team Leader",
-      description:
-        "Full-stack developer leading the technical architecture and system design of DishaSetu.",
-      <img src=""components\images\tarun pic.png"" alt="tarun pic" />
-    },
-    {
-      name: "Astha Verma",
-      role: "Team Member",
-      description:
-        "Frontend specialist focusing on user experience and accessibility features.",
-      avatar: "AV",
-    },
-    {
-      name: "Vandana Arya",
-      role: "Team Member",
-      description:
-        "Backend developer handling database design and API integrations.",
-      avatar: "VA",
-    },
-  ];
+  {
+    name: "Tarun Kushwaha",
+    role: "Team Leader",
+    description:
+      "Full-stack developer leading the technical architecture and system design of DishaSetu.",
+    image: tarunPic,
+  },
+  {
+    name: "Astha Verma",
+    role: "Team Member",
+    description:
+      "Frontend specialist focusing on user experience and accessibility features.",
+    avatar: "AV",
+  },
+  {
+    name: "Vandana Arya",
+    role: "Team Member",
+    description:
+      "Backend developer handling database design and API integrations.",
+    avatar: "VA",
+  },
+];
 
   const values = [
     {
@@ -257,9 +259,19 @@ export default function AboutPage() {
                 key={member.name}
                 className="rounded-2xl border border-border bg-card p-8 text-center"
               >
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground">
-                  {member.avatar}
-                </div>
+                <div className="mx-auto flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-primary text-2xl font-bold text-primary-foreground">
+  {member.image ? (
+    <Image
+      src={member.image}
+      alt={member.name}
+      width={80}
+      height={80}
+      className="h-full w-full object-cover"
+    />
+  ) : (
+    member.avatar
+  )}
+</div>
                 <h3 className="mt-4 text-xl font-semibold text-foreground">
                   {member.name}
                 </h3>
