@@ -11,7 +11,6 @@ import {
   Menu,
   X,
   LogIn,
-  About,
   Info,
 } from 'lucide-react';
 import { LanguageSelector } from './language-selector';
@@ -22,7 +21,7 @@ import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', labelKey: 'nav.home', icon: Home },
-  { href: '/about', labelKey: 'nav.about', icon: About },
+  { href: '/about', labelKey: 'nav.about', icon: Info },
   { href: '/career', labelKey: 'nav.career', icon: Map },
   { href: '/scholarships', labelKey: 'nav.scholarships', icon: GraduationCap },
   { href: '/community', labelKey: 'nav.community', icon: Users },
