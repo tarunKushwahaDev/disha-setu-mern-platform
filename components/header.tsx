@@ -21,7 +21,7 @@ import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', labelKey: 'nav.home', icon: Home },
-  { href: '/about', labelKey: 'About', icon: Info },
+  { href: '/about', labelKey: 'nav.about', icon: Info },
   { href: '/career', labelKey: 'nav.career', icon: Map },
   { href: '/scholarships', labelKey: 'nav.scholarships', icon: GraduationCap },
   { href: '/community', labelKey: 'nav.community', icon: Users },
