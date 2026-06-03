@@ -72,6 +72,34 @@ export default function AboutPage() {
     },
   ];
 
+  const milestones = [
+    {
+      year: "2024",
+      title: "Smart India Hackathon",
+      description:
+        "DishaSetu conceptualized and developed by Team LearnUp for SIH.",
+    },
+    {
+      year: "2024",
+      title: "Offline-First Architecture",
+      description:
+        "Implemented Bluetooth mesh sync for areas with no internet connectivity.",
+    },
+    {
+      year: "2024",
+      title: "Multi-Language Support",
+      description:
+        "Added support for Hindi, Tamil, Bengali, Marathi, Gujarati, and Telugu.",
+    },
+    {
+      year: "2025",
+      title: "Pan-India Expansion",
+      description:
+        "Goal to reach students across all 28 states and 8 union territories.",
+    },
+  ];
+
+
   
   const partners = [
     "Ministry of Education",
