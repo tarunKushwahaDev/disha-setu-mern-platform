@@ -15,9 +15,9 @@ import {
   Mail,
   MapPin,
   Phone,
-  Github,
-  Linkedin,
-  Twitter,
+  GithubIcon,
+  LinkedinIcon,
+  TwitterIcon,
 } from "lucide-react";
 
 export default function AboutPage() {
