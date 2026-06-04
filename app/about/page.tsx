@@ -76,7 +76,7 @@ export default function AboutPage() {
 
   const milestones = [
     {
-      year: "April 2026",
+      year: "May 2026",
       title: "SahAl for Shiksha HACKATHON 2026",
       description:
         "DishaSetu conceptualized and developed by Team Vinayak.",
